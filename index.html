@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Entwicklungsportfolio eines Fachinformatikers für Anwendungsentwicklung mit ausgewählten Softwareprojekten." name="description"/>
+<meta content="#0b1020" name="theme-color"/>
+<title>Entwicklungsportfolio · Fachinformatiker für Anwendungsentwicklung</title>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+<header class="site-header">
+<div class="wrap nav-wrap">
+<a aria-label="Startseite" class="brand" href="#top">
+<span aria-hidden="true" class="brand-mark">&lt;/&gt;</span>
+<span>Jan Lentering</span>
+</a>
+</div>
+</header>
+<main id="main">
+
+
+
+
+
+
+<section class="hero" id="top">
+<div class="wrap hero-simple">
+<p class="eyebrow">Fachinformatiker für Anwendungsentwicklung</p>
+<h1>Ausgewählte Softwareprojekte</h1>
+</div>
+</section><section class="project project-featured" id="abschlussprojekt">
+<div class="wrap project-grid">
+<div class="project-copy">
+<div class="project-kicker"><span class="status status-done">Abgeschlossen</span><span>Ausbildungsprojekt</span></div>
+<h2>Desktop-Prototyp für eine Messgeräte-API</h2>
+<p class="lead">Browserunabhängige JavaFX-Anwendung zur Demonstration einer REST-Schnittstelle für Messgeräte im Bereich radioaktiver Strahlung.</p>
+<p>
+            Die Anwendung kommuniziert über HTTP mit einer gerätespezifischen REST-API, verarbeitet strukturierte Antworten und stellt Mess- sowie Statusinformationen sowohl in Textform als auch grafisch dar. Für ausgewählte Messwerte wurden periodische Live-Abfragen umgesetzt. Steuernde API-Aufrufe ermöglichen unter anderem das Starten und Stoppen von Messfunktionen.
+          </p>
+<p>
+            Die Oberfläche wurde mit JavaFX und FXML in mehrere funktionale Ansichten gegliedert. Das Projekt diente dazu, Kunden und Interessenten die Nutzungsmöglichkeiten einer bestehenden Geräteschnittstelle anschaulich zu demonstrieren.
+          </p>
+<div class="tags"><span>Java 21</span><span>JavaFX</span><span>FXML</span><span>AtlantaFX</span><span>REST</span><span>HTTP</span><span>JSON</span><span>Maven</span></div>
+<div class="focus">
+<strong>Schwerpunkte</strong>
+<span>API-Integration · Datenverarbeitung · Desktop-GUI · Visualisierung · periodische Live-Abfragen</span>
+</div>
+<p class="note">Die Darstellung basiert auf dem Projektstand zum Zeitpunkt des Ausbildungsabschlusses.</p>
+</div>
+<div aria-label="Screenshots des Ausbildungsprojekts in unterschiedlichen Fenstergrößen und Themes" class="abschluss-gallery">
+<figure class="app-shot app-shot-narrow app-shot-dark">
+<img alt="Messwert- und Diagrammansicht des Ausbildungsprojekts im dunklen Theme" src="assets/images/abschlussprojekt-01.png"/>
+<figcaption>Dunkles Theme</figcaption>
+</figure>
+<figure class="app-shot app-shot-wide app-shot-light">
+<img alt="Messwert- und Diagrammansicht des Ausbildungsprojekts im hellen Theme" src="assets/images/abschlussprojekt-02.png"/>
+<figcaption>Helles Theme, variables Fensterformat</figcaption>
+</figure>
+</div>
+</div>
+</section><section class="project project-alt" id="gesundheitstagebuch">
+<div class="wrap project-grid reverse">
+<div class="project-copy">
+<div class="project-kicker"><span class="status status-progress">In Entwicklung</span><span>Eigenprojekt</span></div>
+<h2>Android-Gesundheitstagebuch</h2>
+<p class="lead">Lokale Android-Anwendung zur strukturierten Erfassung und grafischen Auswertung persönlicher Gesundheitsinformationen.</p>
+<p>
+            Die Benutzeroberfläche entsteht mit Kotlin und Jetpack Compose. Unterschiedliche Eintragstypen können erfasst, validiert und in einer gemeinsamen Verlaufsansicht ausgewertet werden. Ein besonderer Schwerpunkt liegt auf interaktiven Diagrammen für Tages-, Wochen-, Monats- und Jahreszeiträume sowie auf der dazugehörigen Navigations- und Aggregationslogik.
+          </p>
+<p>
+            Die Daten bleiben lokal auf dem Gerät. Room übernimmt die Datenhaltung. Die Datenbank wird mit SQLCipher verschlüsselt und der Schlüssel gerätegebunden über den Android Keystore geschützt. Ergänzend existiert ein optionaler PIN-Schutz. Zentrale Logikbereiche werden durch automatisierte Unit-Tests abgesichert.
+          </p>
+<div class="tags"><span>Kotlin</span><span>Android</span><span>Jetpack Compose</span><span>Room</span><span>SQLCipher</span><span>Android Keystore</span><span>JUnit</span></div>
+<div class="focus"><strong>Schwerpunkte</strong><span>lokale Datenhaltung · Datenschutz · Datenvisualisierung · Validierung · automatisierte Tests</span></div>
+<p class="note">Kernfunktionen sind bereits umgesetzt. Weitere Auswertungs- und Komfortfunktionen werden schrittweise ergänzt.</p>
+</div>
+<div aria-label="Screenshots des Android-Gesundheitstagebuchs" class="phone-gallery phone-gallery-two">
+<figure class="phone-shot"><img alt="Diagrammansicht des Gesundheitstagebuchs im Rosé Theme im Zeitmodus" src="assets/images/gesundheit-01.png"/><figcaption>Rosé Theme, Zeitmodus</figcaption></figure>
+<figure class="phone-shot"><img alt="Diagrammansicht des Gesundheitstagebuchs im blauen Theme im Wertemodus" src="assets/images/gesundheit-02.png"/><figcaption>Blaues Theme, Wertemodus</figcaption></figure>
+</div>
+</div>
+</section><section class="project" id="quality-control">
+<div class="wrap project-grid compact-project">
+<div class="project-copy">
+<div class="project-kicker"><span class="status status-demo">Demonstrator</span><span>Eigenprojekt</span></div>
+<h2>Bildbasierte Qualitätskontrolle</h2>
+<p class="lead">Python-Weblösung zur prototypischen Qualitätskontrolle von Organic-Lutschpastillen mittels Bildverarbeitung.</p>
+<p>
+            Die Verarbeitung bildet den Ablauf von Aufnahme, Segmentierung und Merkmalsberechnung bis zur regelbasierten Qualitätsbewertung und visuellen Ergebnisdarstellung ab. OpenCV erkennt und segmentiert Produktproben. Aus verschiedenen Bildmerkmalen entsteht eine Einstufung in „OK“, „Unsicher“ oder „Schlecht“. Ergebnisse und Metadaten werden in SQLite gespeichert und über eine FastAPI-Weboberfläche dargestellt.
+          </p>
+<p>
+            Da im Prototyp keine reale Kamera- und Beleuchtungshardware zur Verfügung stand, erzeugt eine austauschbare Simulationsschicht reproduzierbare Aufnahmen unter mehreren simulierten Beleuchtungssituationen. Die Architektur ist darauf ausgelegt, diese Schicht später durch reale Hardwareanbindung zu ersetzen.
+          </p>
+<div class="tags"><span>Python</span><span>FastAPI</span><span>Uvicorn</span><span>OpenCV</span><span>NumPy</span><span>SQLite</span><span>HTML/CSS</span></div>
+<div class="focus"><strong>Schwerpunkte</strong><span>Bildverarbeitung · Segmentierung · Datenanalyse · Webentwicklung · Simulationsarchitektur</span></div>
+<p class="note">Funktionsfähiger Demonstrator mit simulierter Aufnahme- und Beleuchtungshardware. Eine reale Hardwareanbindung ist als mögliche Weiterentwicklung vorgesehen.</p>
+</div>
+<div class="media-stack">
+<figure class="shot shot-landscape"><img alt="Detailansicht der Qualitätskontrolle mit Rohbildern und Objektergebnissen" src="assets/images/quality-control-02.png"/><figcaption>Rohbilder und Objektergebnisse</figcaption></figure>
+<figure class="shot shot-landscape"><img alt="Weboberfläche der bildbasierten Qualitätskontrolle mit Übersicht und Analyse-Overlays" src="assets/images/quality-control-01.png"/><figcaption>Dashboard mit Übersicht und Analyse-Overlays</figcaption></figure>
+</div>
+</div>
+</section><section class="project project-alt" id="livec1">
+<div class="wrap project-grid reverse compact-project">
+<div class="project-copy">
+<div class="project-kicker"><span class="status status-prototype">Prototyp</span><span>Eigenprojekt</span></div>
+<h2>LiveC1 · MIDI-Sequencer</h2>
+<p class="lead">JavaFX-Desktopanwendung zur Steuerung von MIDI-fähigen Softwareinstrumenten und zur Erstellung clipbasierter Step-Sequenzen.</p>
+<p>
+            Mehrere MIDI-Spuren können mit eigenen Kanälen und General-MIDI-Instrumenten angelegt und über 16-Step-Clips programmiert werden. Eine eigene Sequencer-Logik übernimmt Timing, BPM-Steuerung, Loopbereiche und synchronisiertes Umschalten zwischen Clips. Projekte lassen sich als JSON speichern und laden. Sequenzen können als MIDI-Dateien und über einen einfachen internen Renderer als WAV-Vorschau exportiert werden.
+          </p>
+<div class="tags"><span>Java 21</span><span>JavaFX</span><span>Java MIDI API</span><span>Gson</span><span>JSON</span><span>Maven</span><span>AtlantaFX</span></div>
+<div class="focus"><strong>Schwerpunkte</strong><span>MIDI-Kommunikation · Sequencer-Logik · Timing · Desktop-GUI · Projektpersistenz</span></div>
+<p class="note">Funktionsfähiger Prototyp. Weitere Bedienungs- und Detailoptimierungen sind geplant.</p>
+</div>
+<div class="media-stack">
+<figure class="shot shot-landscape"><img alt="LiveC1 mit Hauptansicht und geöffnetem Drum-Step-Editor" src="assets/images/livec1-01.png"/><figcaption>Hauptansicht mit Spuren, Clips und geöffnetem Step-Editor</figcaption></figure>
+</div>
+</div>
+</section><section class="project" id="bewerbungstracker">
+<div class="wrap project-grid compact-project">
+<div class="project-copy">
+<div class="project-kicker"><span class="status status-prototype">Prototyp</span><span>Eigenprojekt</span></div>
+<h2>Bewerbungstracker</h2>
+<p class="lead">Spring-Boot-Webanwendung zur strukturierten Verwaltung von Bewerbungsprozessen.</p>
+<p>
+            Das Backend ist als REST-API mit getrennter Controller-, Service- und Repository-Schicht umgesetzt. Die Webanwendung wird über den in Spring Boot eingebetteten Tomcat-Server bereitgestellt. Bewerbungen können erfasst, gesucht, abgeschlossen und gelöscht werden. Serverseitige Validierung, DTOs und eine zentrale Fehlerbehandlung sorgen für klar definierte Schnittstellenantworten. Ein schlankes Frontend mit HTML, CSS und JavaScript kommuniziert per Fetch API mit dem Backend.
+          </p>
+<div class="tags"><span>Java 21</span><span>Spring Boot</span><span>Tomcat</span><span>REST</span><span>Spring Data JPA</span><span>H2</span><span>Bean Validation</span><span>JUnit</span><span>MockMvc</span></div>
+<div class="focus"><strong>Schwerpunkte</strong><span>REST-API · Schichtenarchitektur · Validierung · Fehlerbehandlung · DTO-Mapping</span></div>
+<p class="note">Der aktuelle Prototyp nutzt H2. Eine dauerhafte Datenbankanbindung ist als nächster Ausbau vorgesehen.</p>
+</div>
+<figure class="shot shot-landscape">
+<img alt="Bewerbungstracker mit Formular, Übersicht und fiktiven Bewerbungen" src="assets/images/bewerbungstracker-01.png"/>
+<figcaption>Formular, Übersicht und fiktive Bewerbungen mit verschiedenen Statuswerten</figcaption>
+</figure>
+</div>
+</section></main>
+<footer>
+<div class="wrap footer-wrap footer-wrap-single">
+<p class="footer-note">© 2026 Jan Lentering · Projektquellcode ist aus Vertraulichkeits- oder Entwicklungsgründen nicht öffentlich verlinkt.</p>
+</div>
+</footer>
+
+<dialog class="image-lightbox" id="imageLightbox" aria-label="Screenshot vergrößert">
+  <div class="image-lightbox-inner">
+    <button class="image-lightbox-close" type="button" aria-label="Vergrößerte Ansicht schließen"></button>
+    <img alt="" src=""/>
+  </div>
+</dialog>
+<script src="script.js"></script>
+</body>
+</html>
