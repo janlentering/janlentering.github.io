@@ -118,6 +118,7 @@
 
   images.forEach((img) => {
     img.tabIndex = 0;
+    img.title = 'Zum Vergrößern anklicken';
     img.setAttribute('role', 'button');
     img.setAttribute('aria-label', `${img.alt || 'Screenshot'} vergrößern`);
     img.addEventListener('click', () => open(img));
