@@ -1565,20 +1565,6 @@ body { padding-top: var(--site-header-height); }
   color: #7f8eaa;
 }
 
-/* Screenshot-Karten: dauerhaft die etwas hellere Kante aus V9-Hover.
-   Keine Animation, keine Groessenaenderung und keine Hover-Reaktion. */
-.shot, .app-shot {
-  border-color: rgba(148, 168, 204, .40);
-  box-shadow: 0 10px 22px rgba(3, 10, 24, .14),
-              0 2px 7px rgba(3, 10, 24, .08);
-}
-
-.phone-shot figcaption {
-  border-color: rgba(148, 168, 204, .40);
-  box-shadow: 0 10px 22px rgba(3, 10, 24, .14),
-              0 2px 7px rgba(3, 10, 24, .08);
-}
-
 @media (max-width: 660px) {
   .footer-wrap .footer-note,
   .footer-note { font-size: .63rem; }
