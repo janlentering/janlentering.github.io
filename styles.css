@@ -1569,3 +1569,42 @@ body { padding-top: var(--site-header-height); }
   .footer-wrap .footer-note,
   .footer-note { font-size: .63rem; }
 }
+
+/* Vereinfachte Screenshot-Darstellung:
+   keine Infokästen, keine zusätzlichen Rahmen,
+   Beschriftung frei unter dem Bild */
+.shot,
+.app-shot,
+.phone-shot {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.shot,
+.app-shot {
+  border: none !important;
+  overflow: visible !important;
+}
+
+.shot figcaption,
+.app-shot figcaption,
+.phone-shot figcaption {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 10px 0 0 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #90a0bc !important;
+  white-space: normal !important;
+}
+
+.phone-shot img {
+  margin-left: 0 !important;
+}
+
+#gesundheitstagebuch .phone-shot figcaption {
+  width: 100% !important;
+  margin-top: 10px !important;
+}
