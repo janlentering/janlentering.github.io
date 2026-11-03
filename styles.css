@@ -1617,3 +1617,42 @@ body { padding-top: var(--site-header-height); }
   }
 }
 
+
+/* HealthDiary – proportional gekoppelte Bild-/Beschriftungsgeometrie (Prüffassung).
+   Alle horizontalen Abmessungen und die Überlagerung beziehen sich auf dieselbe
+   Breite der figure. Dadurch behalten Bild und Kasten beim Resize/Zoom ihr
+   Größenverhältnis; das übrige Layout einschließlich Kaskade bleibt unverändert. */
+/* HealthDiary: Variante 1 – identische Werte fuer alle Bildschirmbreiten. */
+#gesundheitstagebuch .phone-shot:nth-child(1) {
+  --caption-inset-left: -0.01%;
+  --caption-width: 99.29%;
+  --caption-overlap: 12%;
+}
+#gesundheitstagebuch .phone-shot:nth-child(2) {
+  --caption-inset-left: -0.28%;
+  --caption-width: 99.74%;
+  --caption-overlap: 12%;
+}
+#gesundheitstagebuch .phone-shot img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+#gesundheitstagebuch .phone-shot figcaption,
+#gesundheitstagebuch .phone-shot:nth-child(1) figcaption,
+#gesundheitstagebuch .phone-shot:nth-child(2) figcaption {
+  box-sizing: border-box;
+  width: var(--caption-width);
+  max-width: none;
+  margin: calc(-1 * var(--caption-overlap)) 0 0 var(--caption-inset-left);
+  padding-top: calc(var(--caption-overlap) + 10px);
+}
+@media (max-width: 640px) {
+  #gesundheitstagebuch .phone-shot figcaption,
+  #gesundheitstagebuch .phone-shot:nth-child(1) figcaption,
+  #gesundheitstagebuch .phone-shot:nth-child(2) figcaption {
+    padding-top: calc(var(--caption-overlap) + 8px);
+  }
+}
