@@ -1622,15 +1622,15 @@ body { padding-top: var(--site-header-height); }
    Alle horizontalen Abmessungen und die Überlagerung beziehen sich auf dieselbe
    Breite der figure. Dadurch behalten Bild und Kasten beim Resize/Zoom ihr
    Größenverhältnis; das übrige Layout einschließlich Kaskade bleibt unverändert. */
-/* HealthDiary: Variante 2 – identische Werte fuer alle Bildschirmbreiten. */
+/* HealthDiary: Variante 1 – identische Werte fuer alle Bildschirmbreiten. */
 #gesundheitstagebuch .phone-shot:nth-child(1) {
-  --caption-inset-left: 0%;
-  --caption-width: 99.27%;
+  --caption-inset-left: -0.01%;
+  --caption-width: 99.29%;
   --caption-overlap: 12%;
 }
 #gesundheitstagebuch .phone-shot:nth-child(2) {
-  --caption-inset-left: -0.27%;
-  --caption-width: 99.72%;
+  --caption-inset-left: -0.28%;
+  --caption-width: 99.74%;
   --caption-overlap: 12%;
 }
 #gesundheitstagebuch .phone-shot img {
