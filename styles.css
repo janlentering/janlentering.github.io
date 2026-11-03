@@ -121,8 +121,9 @@ footer { padding:42px 0 55px; border-top:1px solid var(--line); }
 .footer-wrap p { margin:0; }
 .footer-wrap strong { color:var(--text); }
 .footer-note { max-width:500px; text-align:right; }
-/* Desktop: ausgewogener Zeilenumbruch im Copyright-Hinweis. */
-@media (min-width: 901px) {
+/* Copyright-Hinweis: harmonischer Zeilenumbruch auf Desktop und im Querformat.
+   Das Smartphone-Hochformat behaelt die bisherige Darstellung. */
+@media (min-width: 901px), (orientation: landscape) and (max-width: 900px) {
   .footer-note { max-width: 420px; }
 }
 
