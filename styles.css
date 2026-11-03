@@ -1316,7 +1316,7 @@ body { padding-top: var(--site-header-height); }
   .abschluss-gallery {
     width: 100%;
     max-width: 490px;
-    grid-template-columns: minmax(0, .45fr) minmax(0, .55fr);
+    grid-template-columns: minmax(0, 322fr) minmax(0, 510fr);
     align-items: start;
     justify-items: center;
     gap: 10px;
@@ -1390,7 +1390,7 @@ body { padding-top: var(--site-header-height); }
   .project { padding: 30px 0 35px; }
   .abschluss-gallery {
     width: min(100%, 550px);
-    grid-template-columns: minmax(0, .44fr) minmax(0, .56fr);
+    grid-template-columns: minmax(0, 322fr) minmax(0, 510fr);
     gap: 14px;
   }
   .abschluss-gallery .app-shot-narrow,
@@ -1569,3 +1569,51 @@ body { padding-top: var(--site-header-height); }
   .footer-wrap .footer-note,
   .footer-note { font-size: .63rem; }
 }
+
+/* HealthDiary: identische Kastenmasse in allen Ansichten.
+   Individueller horizontaler Versatz fuer die beiden Emulatoren. */
+#gesundheitstagebuch .phone-shot:nth-child(1) figcaption {
+  margin-left: 0.4px;
+  width: 98.7%;
+  max-width: none;
+}
+
+#gesundheitstagebuch .phone-shot:nth-child(2) figcaption {
+  margin-left: 0.8px;
+  width: 98.7%;
+  max-width: none;
+}
+
+/* Messgeraete-API: identischer Massstab der beiden Original-Screenshots.
+   Die Titelleisten sind in den PNGs gleich gross. Deshalb entsprechen die
+   Bildspalten bei jeder Viewportbreite dem nativen Breitenverhaeltnis 322:510.
+   Ein Outline ersetzt den 1px-Rahmen, damit dieser die nutzbare Bildbreite
+   nicht unterschiedlich stark verkleinert. */
+#abschlussprojekt .abschluss-gallery {
+  grid-template-columns: minmax(0, 322fr) minmax(0, 510fr);
+  align-items: start;
+}
+
+#abschlussprojekt .abschluss-gallery .app-shot-narrow,
+#abschlussprojekt .abschluss-gallery .app-shot-wide {
+  width: 100%;
+  max-width: none;
+  margin-top: 0;
+  border: 0;
+  outline: 1px solid var(--line);
+}
+
+#abschlussprojekt .abschluss-gallery .app-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Messgeraete-API: den bisherigen kaskadierten Desktop-Versatz erhalten.
+   Auf kleinen Bildschirmen bleibt die bisherige Ausrichtung unveraendert. */
+@media (min-width: 901px) {
+  #abschlussprojekt .abschluss-gallery .app-shot-narrow {
+    margin-top: 28px;
+  }
+}
+
